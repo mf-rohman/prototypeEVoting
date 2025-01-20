@@ -1,0 +1,218 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>E-Voting - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      nav a {
+        position: relative;
+        display: inline-block;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: #fbfbfc; /* Indigo-600 */
+        transition: width 0.3s ease-in-out;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <!-- <img
+          alt="Logo"
+          class="w-10 h-10"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/tdp5ERXij5uhN7BOwtMRdU1MIdRuORDsN-1y5SKS9CM.jpg"
+          width="40"
+        /> -->
+        <h1 class="text-xl font-bold">E-Voting</h1>
+      </div>
+      <nav class="space-x-4">
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="#">Home</a>
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="#election"
+          >Election</a
+        >
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="receipt.html"
+          >Transactions Receipt</a
+        >
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="bg-blue-600 px-4 py-2 rounded">Logout</button>
+        <a href="userDashboard.html">
+            <img
+                alt="User Avatar"
+                class="w-10 h-10 rounded-full"
+                height="40"
+                src="https://storage.googleapis.com/a1aa/image/T52KmK-9qHDxfY7w9Sp7Lu9jy3XBJvNvis4yQQJm9L4.jpg"
+                width="40"
+            />
+        </a>
+        
+      </div>
+    </header>
+    <main class="p-8">
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Secure Blockchain Voting</h2>
+        <p class="text-gray-400 mb-4">
+          Our Blockchain Voting DApp ensures transparency and security in the
+          voting process, providing a seamless experience for all users. Enjoy
+          the future of voting with cutting-edge blockchain technology.
+        </p>
+        <img
+          alt="Blockchain Voting"
+          class="w-full h-64 object-cover rounded-lg"
+          height="300"
+          src="https://storage.googleapis.com/a1aa/image/LGzE2xqEYMA9gLUIw_cnLeP5yQQxjBSdc0IcnAsWjMI.jpg"
+          width="1200"
+        />
+      </section>
+      <section id="election" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Voting Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-gray-800 p-4 rounded-lg">
+            <img
+              alt="Pemilihan Presiden"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/zAJiNoYnR9QUgrQK7DNCvnsyM3ayfff0n6oAa3yAO2Y.jpg"
+              width="400"
+            />
+            <h3 class="text-xl font-semibold mb-2">Pemilihan Presiden</h3>
+            <p class="text-gray-400 mb-4">Vote for the next President.</p>
+            <a href="vote.html">
+                <button class="bg-blue-600 px-4 py-2 rounded w-full">
+                    Vote Now
+                  </button>
+            </a>
+            
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg">
+            <img
+              alt="Pemilihan DPRD"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/nCY1jI3GRd1DL-P1cdz6yLNklkYqlq52Mv8RIK7Iy74.jpg"
+              width="400"
+            />
+            <h3 class="text-xl font-semibold mb-2">Pemilihan DPRD</h3>
+            <p class="text-gray-400 mb-4">Vote for the regional council.</p>
+            <button class="bg-blue-600 px-4 py-2 rounded w-full">
+              Vote Now
+            </button>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg">
+            <img
+              alt="Other Votes"
+              class="w-full h-40 object-cover rounded-lg mb-4"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/QVQpVZWVKA4URnQ3kdu14FR7V5WT7IFguUSabdwq2Pk.jpg"
+              width="400"
+            />
+            <h3 class="text-xl font-semibold mb-2">Other Votes</h3>
+            <p class="text-gray-400 mb-4">
+              Other various categories of voting.
+            </p>
+            <button class="bg-blue-600 px-4 py-2 rounded w-full">
+              Vote Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Our Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+            <img
+              alt="Project A"
+              class="w-24 h-24 object-cover rounded-lg mr-4"
+              height="100"
+              src="https://storage.googleapis.com/a1aa/image/QQp5PvflT9arUaianLwsxUlQ_fLJtIjcB3U2bVS86hQ.jpg"
+              width="100"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project A</h3>
+              <p class="text-gray-400">Project A description goes here.</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+            <img
+              alt="Project B"
+              class="w-24 h-24 object-cover rounded-lg mr-4"
+              height="100"
+              src="https://storage.googleapis.com/a1aa/image/-o2i73UEwd-zk24h1pRPp-kNtCI8_u_0ZrY3s6oAOWg.jpg"
+              width="100"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project B</h3>
+              <p class="text-gray-400">Project B description goes here.</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+            <img
+              alt="Project C"
+              class="w-24 h-24 object-cover rounded-lg mr-4"
+              height="100"
+              src="https://storage.googleapis.com/a1aa/image/wCACn-OS9yROMKkfESZ-sWrz77VPFPAi2T2mpAk5svM.jpg"
+              width="100"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project C</h3>
+              <p class="text-gray-400">Project C description goes here.</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+            <img
+              alt="Project D"
+              class="w-24 h-24 object-cover rounded-lg mr-4"
+              height="100"
+              src="https://storage.googleapis.com/a1aa/image/HuOMQTakY64SfaMtE2EKzp3fYk0tHx8As9Ulki_YueI.jpg"
+              width="100"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Project D</h3>
+              <p class="text-gray-400">Project D description goes here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-blue-600 p-8 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">
+          We're Hiring Blockchain &amp; DAPPs Developer
+        </h2>
+        <p class="text-gray-200 mb-4">
+          The DAPPs team is open source! If you’re interested, develop with our
+          team.
+        </p>
+        <img
+          alt="Team"
+          class="w-full h-64 object-cover rounded-lg mb-4"
+          height="300"
+          src="https://storage.googleapis.com/a1aa/image/W7uirzX61J_UU8TNBOJItMZf0Ft-fVU9vO5FoSw_QjY.jpg"
+          width="1200"
+        />
+        <button class="bg-gray-900 px-4 py-2 rounded">Submit Your CV</button>
+      </section>
+    </main>
+  </body>
+</html>

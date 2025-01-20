@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>E-Voting - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS for sticky navbar */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Hover effect for navbar links */
+      nav a {
+        position: relative;
+        display: inline-block;
+      }
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: #fbfbfc; /* Indigo-600 */
+        transition: width 0.3s ease-in-out;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-sky-700 text-gray-200">
+    <header class="bg-sky-900  opacity-75 p-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <!-- <img
+          alt="E-Voting logo"
+          class="h-10 w-10 mr-2"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/ccosEv9PqQyFTNy0JxViWGCquEQkKF0nqOI4dHW4mso.jpg"
+          width="40"
+        /> -->
+        <span class="text-xl font-bold">E-Voting</span>
+      </div>
+      <!-- <nav class="flex space-x-4">
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="#">Home</a>
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="#">About</a>
+        <a class="font-bold text-gray-200 hover:text-blue-400" href="#">Help</a>
+      </nav> -->
+      <div class="flex space-x-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded">
+          Register
+        </button>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded">
+          Sign In
+        </button>
+      </div>
+    </header>
+    <main class="flex justify-center items-center h-screen">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4">Login</h1>
+        <form class="space-y-4" action="home.html" method="GET">
+          <input
+            class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-gray-200"
+            placeholder="KTP Number or e-mail"
+            type="text" required
+          />
+          <input
+            class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-gray-200"
+            placeholder="Password"
+            type="password" required
+          />
+          <button
+            class="w-full bg-blue-600 text-white p-2 rounded"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+        <div class="mt-4">
+          <button class="w-full bg-white text-gray-900 p-2 rounded">
+            Continue with Google
+          </button>
+        </div>
+        <div class="mt-4 space-y-2">
+          <button class="w-full bg-blue-600 text-white p-2 rounded">
+            Use Pass Fingerprint
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

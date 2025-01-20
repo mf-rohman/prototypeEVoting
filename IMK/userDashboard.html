@@ -1,0 +1,144 @@
+<html>
+ <head>
+  <title>
+   E-Vote - Dashboard Pemilih
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-200">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-1/5 bg-gray-900 text-white h-screen p-4">
+    <h1 class="text-xl font-bold mb-6">
+     E-Vote
+    </h1>
+    <ul>
+     <li class="mb-4">
+      <a class="flex items-center p-2 hover:bg-gray-700 rounded" href="#">
+       <i class="fas fa-home mr-2">
+       </i>
+       Home
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center p-2 hover:bg-gray-700 rounded" href="#">
+       <i class="fas fa-user mr-2">
+       </i>
+       Profile
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center p-2 hover:bg-gray-700 rounded" href="#">
+       <i class="fas fa-image mr-2">
+       </i>
+       Gallery
+      </a>
+     </li>
+     <li class="mb-4">
+      <a class="flex items-center p-2 hover:bg-gray-700 rounded" href="#">
+       <i class="fas fa-chart-bar mr-2">
+       </i>
+       Statistics
+      </a>
+     </li>
+    </ul>
+    <div class="absolute bottom-4 left-4 flex items-center">
+     <img alt="User profile picture" class="rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/jZfoHMMjQVTemUa2zB4r88iasGfuqjU5sYex9QfEeLHYu5lBF.jpg" width="40"/>
+     <div>
+      <p class="text-sm">
+       Amanda
+      </p>
+      <p class="text-xs text-gray-400">
+       View profile
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="w-4/5 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h2 class="text-2xl font-bold">
+      Dashboard Pemilih
+     </h2>
+     <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      Logout
+     </button>
+    </div>
+    <!-- Statistics Section -->
+    <div class="bg-gray-800 text-white p-6 rounded mb-6">
+     <h3 class="text-xl font-bold mb-4">
+      Statistics
+     </h3>
+     <div class="grid grid-cols-4 gap-4">
+      <div class="bg-gray-900 p-4 rounded">
+       <p class="text-sm">
+        User Growth
+       </p>
+       <p class="text-2xl font-bold">
+        1200
+       </p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded">
+       <p class="text-sm">
+        Revenue Increase
+       </p>
+       <p class="text-2xl font-bold">
+        $5000
+       </p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded">
+       <p class="text-sm">
+        Election Rate
+       </p>
+       <p class="text-2xl font-bold">
+        30%
+       </p>
+      </div>
+      <div class="bg-gray-900 p-4 rounded">
+       <p class="text-sm">
+        Other Stats
+       </p>
+       <p class="text-2xl font-bold">
+        N/A
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Election Results Overview Section -->
+    <div class="bg-white p-6 rounded mb-6">
+     <h3 class="text-xl font-bold mb-4">
+      Election Results Overview
+     </h3>
+     <div class="flex justify-between items-center mb-4">
+      <div>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded">
+        Today
+       </button>
+       <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded ml-2">
+        30 days
+       </button>
+      </div>
+      <div>
+       <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">
+        Print
+       </button>
+       <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded ml-2">
+        Export
+       </button>
+      </div>
+     </div>
+     <img alt="Bar chart showing election results by category" height="300" src="https://storage.googleapis.com/a1aa/image/HLgq0yWBFxqhBJ8j0CLNKpuCSfGOqsi1V852EE5rr1GczLDKA.jpg" width="600"/>
+    </div>
+    <!-- Election Statistics Section -->
+    <div class="bg-white p-6 rounded">
+     <h3 class="text-xl font-bold mb-4">
+      Election Statistics
+     </h3>
+     <img alt="Pie chart showing election statistics" height="300" src="https://storage.googleapis.com/a1aa/image/23KAvam1BupkFFeGMfNc1MH6awFbn39lvLN1zarUeki2NvMoA.jpg" width="600"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
